@@ -1,0 +1,46 @@
+# node_modules
+node_modules/
+
+# dependencies
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# build
+dist/
+build/
+out/
+.esbuild/
+.parcel-cache/
+
+# bundling configs (si los agregás después)
+webpack.config.js
+vite.config.js
+rollup.config.js
+tsconfig.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# logs
+*.log
+npm-debug.log*
+
+# environment (si agregás .env después)
+.env
+.env.local
+.env.*.local
+
+# misc
+.cache/
+.tmp/
+.parcel/

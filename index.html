@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>NEO TURF MASTERS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+<style>
+  /* ---- reset & layout ---- */
+  *{box-sizing:border-box} body{margin:0;background:#06130b;color:#fff;font-family:'Press Start 2P',monospace;overflow:hidden}
+  #top{display:flex;gap:8px;align-items:center;justify-content:center;padding:8px;background:#0d2b16;border-bottom:3px solid #ffd23f;flex-wrap:wrap;font-size:10px}
+  .tag{background:#123c1f;border:2px solid #ffd23f;border-radius:6px;padding:6px 8px}
+  #wrap{display:flex;justify-content:center;padding:8px}
+  #stage{position:relative;width:960px;max-width:97vw}
+  #c3d{width:100%;display:block;border:4px solid #0a1f10;border-radius:8px;image-rendering:pixelated;background:#79b8e8}
+  #c2d{position:absolute;inset:0;width:100%;height:100%}
+  #help{text-align:center;font-size:9px;opacity:.9;padding:6px;font-family:monospace;margin-top:8px}
+  kbd{background:#222;border:1px solid #888;border-radius:4px;padding:0 5px}
+</style>
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+</script>
+</head>
+<body>
+<div id="top">
+  <span class="tag" id="hudHole">1st HOLE · PAR 4</span>
+  <span class="tag">⛳ <span id="hudGolfer">GEORGE SPINNER</span></span>
+  <span class="tag">WIND <span id="windArrow">➤</span> <span id="hudWind">5 mph</span></span>
+  <span class="tag">STROKE <span id="hudStroke">0</span></span>
+  <span class="tag" id="hudClub">1 WOOD</span>
+  <span class="tag" id="hudMsg">···</span>
+</div>
+<div id="wrap"><div id="stage"><canvas id="c3d" width="480" height="270"></canvas><canvas id="c2d" width="960" height="540"></canvas></div></div>
+<div id="help">
+  <kbd>1</kbd>-<kbd>6</kbd> golfista · <kbd>←</kbd><kbd>→</kbd> apuntar · <kbd>↑</kbd><kbd>↓</kbd> palo ·
+  <kbd>Z</kbd> hook / <kbd>X</kbd> slice / <kbd>C</kbd> recto ·
+  <kbd>ESPACIO</kbd>: iniciar → potencia → altura · <kbd>R</kbd> auto-apuntar
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
