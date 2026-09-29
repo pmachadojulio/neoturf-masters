@@ -24,6 +24,12 @@ tsconfig.json
 Thumbs.db
 desktop.ini
 
+# macOS resource forks (no trackear)
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
 # editor / IDE
 .vscode/
 .idea/
